@@ -8,4 +8,7 @@ chmod +x install.sh
 ```
 
 ### Showcase
-![example](blob:https://www.facebook.com/5d024316-5b1b-4bc3-8c35-7adac216e338)
+![example](https://raw.githubusercontent.com/bunnyhop-dev/Dotfiles/refs/heads/main/showcase.png)
+
+### :)
+```DejaVolf```
