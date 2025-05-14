@@ -1,0 +1,12 @@
+## ===== Basic Nano Config =====
+set linenumbers
+set softwrap
+set tabsize 4
+set autoindent
+set mouse
+set constantshow
+set indicator
+set multibuffer
+
+## ===== Enable syntax highlight =====
+include "/usr/share/nano/*.nanorc"
