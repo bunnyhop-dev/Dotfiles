@@ -40,7 +40,7 @@ install_config() {
   cp -r alacritty/ nvim/ pip/ polybar/ ~/.config && cp -r scripts ~/scripts
   cp .bashrc .nanorc ~/ && source ~/.bashrc
   cp .spectrwm.conf ~/ && chmod +x ~/.spectrwm.conf
-  cd ~/ && touch .xinitrc && "echo (sleep 1 && polybar dejavolf &)" >> .xinitrc && chmod +x .xinitrc
+  cd ~/ && touch .xprofile && "echo (sleep 2 && polybar dejavolf &)" >> ~/.xprofile && chmod +x ~/.xprofile
   echo "[+] Configs installed! :)"
 }
 
