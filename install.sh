@@ -41,7 +41,7 @@ install_config() {
   cp -r nvim/ pip/ ~/.config && cp -r scripts ~/scripts
   cp .bashrc .nanorc ~/ && source ~/.bashrc
   cp .spectrwm.conf ~/ && chmod +x ~/.spectrwm.conf
-  cd ~/ && touch .xprofile && echo -e "(sleep 2 && polybar dejavolf &)" >> ~/.xprofile && chmod +x ~/.xprofile
+  cd ~/ && touch .xprofile && echo -e "sleep 2 && polybar dejavolf &" >> ~/.xprofile && chmod +x ~/.xprofile
   echo "[+] Configs installed! :)"
 }
 
