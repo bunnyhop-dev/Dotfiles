@@ -19,6 +19,7 @@ install_polybar() {
 
 install_alacritty() {
     sudo pacman -S alacritty --noconfirm
+    mkdir -p ~/.config/alacritty/
     cp -r alacritty/ ~/.config/alacritty/
     sleep 1
     echo "[+] Alacritty installed!"
@@ -37,10 +38,10 @@ install_packages() {
 
 install_config() {
   sleep 3
-  cp -r alacritty/ nvim/ pip/ polybar/ ~/.config && cp -r scripts ~/scripts
+  cp -r nvim/ pip/ ~/.config && cp -r scripts ~/scripts
   cp .bashrc .nanorc ~/ && source ~/.bashrc
   cp .spectrwm.conf ~/ && chmod +x ~/.spectrwm.conf
-  cd ~/ && touch .xprofile && "echo (sleep 2 && polybar dejavolf &)" >> ~/.xprofile && chmod +x ~/.xprofile
+  cd ~/ && touch .xprofile && echo -e "(sleep 2 && polybar dejavolf &)" >> ~/.xprofile && chmod +x ~/.xprofile
   echo "[+] Configs installed! :)"
 }
 
