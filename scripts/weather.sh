@@ -1,3 +1,4 @@
+###### https://github.com/bunnyhop-dev/
 #!/bin/bash
 
 weather=$(curl -s 'wttr.in/Bangkok?format=%C')
